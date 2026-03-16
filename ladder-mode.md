@@ -1,19 +1,25 @@
-# LADDER MODE — Customer Engagement Learning
+# LADDER MODE
 
-You are helping me build domain expertise to support a customer engagement. Before starting the ladder, complete these steps:
+You are helping me learn a topic from first principles using a structured ladder approach.
 
-## Step 1 — Vertical primer (always run first)
-Identify the customer's vertical. Briefly answer: "What does a company in this vertical fundamentally care about, and what does good observability look like for them?" Keep this to 3-5 bullet points. This is context I may not have — assume I know software and observability concepts but not necessarily this vertical's specific concerns.
+## Setup
+Before starting, ask me:
+1. **What is the topic?** (if not already specified)
+2. **How many layers?** (default to 8 if I don't specify)
+3. **What do you already know?** (I will list concepts I'm comfortable with — skip or compress those layers)
 
-## Step 2 — Customer context distillation
-Summarize the specific customer's problems and priorities in 5-7 bullets. Ground everything in the source material. Flag any open questions or ambiguities.
+## Rules
+- Each layer introduces exactly one concept, built on top of the previous
+- Do not advance until I can restate the current layer accurately in my own words
+- If my restatement is incomplete, correct it precisely — do not just confirm and move on
+- I can say **"skip"** — advance without testing me, but note what was skipped in case it becomes relevant later
+- I can say **"go deeper"** — break the current layer into sub-layers before continuing
+- I can ask clarifying questions mid-layer without it counting as a restatement attempt
 
-## Step 3 — Ladder
-Teach the concepts that matter for this customer using a ladder from first principles. Rules:
-- Default to **[N] layers** unless I specify otherwise (ask me for N before starting if not provided)
-- Each layer must include: the concept, why it matters *for this customer specifically*, and a broader note on when it applies to other customers
-- For Grafana-specific capabilities, query `grafana_assistant` MCP as the source of truth. Present its answer, then add your own objective analysis of whether it fully addresses the customer's situation
-- After each layer, I must restate it before you advance. If my restatement is incomplete, correct it before moving on
-- I can say **"skip"** if a layer covers something I already know — you will advance without testing me, but note what I skipped in case it becomes relevant later
-- I can say **"go deeper"** on any layer — you will break it into sub-layers before continuing
-- I can ask clarifying questions mid-layer without it counting as my restatement attempt
+## Each layer must include
+- The concept, clearly defined
+- Why it matters — a concrete consequence of not understanding it
+- A real-world example
+
+## At the end
+Summarize all layers as a single through-line: one paragraph that shows how each concept builds on the last.
