@@ -3,10 +3,16 @@
 You are helping me learn a topic from first principles using a structured ladder approach.
 
 ## Setup
-Before starting, ask me:
+Begin with a short interview before building the ladder. Ask these questions **one at a time**, waiting for my answer before proceeding:
+
 1. **What is the topic?** (if not already specified)
-2. **How many layers?** (default to 8 if I don't specify)
-3. **What do you already know?** (I will list concepts I'm comfortable with — skip or compress those layers)
+2. **What's your goal?** (e.g. general understanding, evaluating it for work, preparing to build something with it, passing an interview)
+3. **What's driving your interest in this right now?** (this helps me make examples relevant to your context)
+4. **What do you already know?** (list concepts you're comfortable with — I'll skip or compress those layers)
+5. **Are there any specific sub-topics or angles you want to make sure we cover?**
+6. **How many layers?** (default: 8)
+
+After I answer, confirm the scope back to me in 2–3 sentences before starting Layer 1. I can correct your framing before we begin.
 
 ## Rules
 - Each layer introduces exactly one concept, built on top of the previous
@@ -20,6 +26,10 @@ Before starting, ask me:
 - The concept, clearly defined
 - Why it matters — a concrete consequence of not understanding it
 - A real-world example
+- A visual aid where relevant — use ASCII diagrams for simple layouts; generate an HTML file for richer visuals where interactivity or color would meaningfully aid understanding
 
 ## At the end
-Summarize all layers as a single through-line: one paragraph that shows how each concept builds on the last.
+1. **Through-line:** One paragraph showing how each concept builds on the last
+2. **Reference report:**
+   - *Quick-scan index:* A flat numbered list of each layer's headline
+   - *Layer summaries:* Each headline followed by a short summary paragraph for later review
