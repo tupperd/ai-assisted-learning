@@ -59,7 +59,25 @@ One paragraph showing how each concept builds on the last — the full arc from 
 
 ## Session Output
 
-After producing the Reference Report, offer to save the complete output (through-line + reference report) as a markdown file named `<topic-slug>_ladder.md` (e.g. `backstage_ladder.md`).
+After producing the Reference Report, offer the user two save options:
+
+**1. Markdown file (full output)**
+Save the complete through-line + reference report as a markdown file.
+
+- Default location: `~/playground/learning-outputs/`
+- Ask: *"Save to `~/playground/learning-outputs/` or a different location?"*
+
+Filename format: `YYYY-MM-DD<HHmm>_<topic-slug>_ladder.md`
+Example: `2026-04-05_1430_kubernetes-networking_ladder.md`
+
+**2. open-brain memory (compact summary)**
+If open-brain MCP is available, capture a single compact summary via `capture_thought` containing:
+- Topic and layers covered (condensed from the quick-scan index)
+- The user's stated goal from the intake interview
+- Pointer to the markdown filename if saved
+This is 1 `capture_thought` call — state this before executing.
+
+Ask: *"How would you like to save this session? (1) Markdown file, (2) open-brain summary, (3) both, (4) skip"*
 
 ## Best Practices
 
