@@ -74,7 +74,7 @@ Example: `2026-04-05_1430_kubernetes-networking_ladder.md`
 If open-brain MCP is available, capture a single compact summary via `capture_thought` containing:
 - Topic and layers covered (condensed from the quick-scan index)
 - The user's stated goal from the intake interview
-- Pointer to the markdown filename if saved
+- Full file path to the saved markdown file (e.g. `~/playground/learning-outputs/2026-04-05_1430_kubernetes-networking_ladder.md`) — include this even if just the filename was mentioned earlier
 This is 1 `capture_thought` call — state this before executing.
 
 Ask: *"How would you like to save this session? (1) Markdown file, (2) open-brain summary, (3) both, (4) skip"*
